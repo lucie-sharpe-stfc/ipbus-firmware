@@ -1,5 +1,5 @@
 set path_script [file dirname [file normalize [info script]]]
-set path_src [file join {*}[lrange [file split $path_script] 0 end-6]]
+set path_src [file join {*}[lrange [file split $path_script] 0 end-5]]
 
 
 # ==== Top ====
