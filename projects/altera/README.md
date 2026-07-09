@@ -15,8 +15,8 @@ ipbb add git git@github.com:lucie-sharpe-stfc/ipbus-firmware.git -b v1.14.1_agil
 mkdir -p proj/quartus_ipbus_example
 cd proj/quartus_ipbus_example/
 
-quartus_sh -t ../../src/ipbus-firmware/boards/DK-SI-AGI040FES/synth/firmware/cfg/create_project.tcl quartus_ipbus_example
-sh ../../src/ipbus-firmware/boards/DK-SI-AGI040FES/synth/firmware/cfg/generate_ip.sh
+quartus_sh -t ../../src/ipbus-firmware/projects/altera/firmware/cfg/create_project.tcl quartus_ipbus_example
+sh ../../src/ipbus-firmware/projects/altera/firmware/cfg/generate_ip.sh
 
 quartus_sh --flow compile quartus_ipbus_example -c top
 ```
